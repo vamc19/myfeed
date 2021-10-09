@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.1">
+  <head>
+    <title>
+      Feeder
+    </title>
+  </head>
+  <body>
+    <outline title="Julia Evans" text="Julia Evans" type="rss" xmlUrl="http://jvns.ca/atom.xml"/>
+    <outline title="The Old New Thing" text="The Old New Thing" type="rss" xmlUrl="https://devblogs.microsoft.com/oldnewthing/feed"/>
+    <outline title="Micah Lerner" text="Micah Lerner" type="rss" xmlUrl="https://www.micahlerner.com/feed.xml"/>
+    <outline title="The Morning Paper" text="The Morning Paper" type="rss" xmlUrl="https://blog.acolyer.org/feed/"/>
+
+    <outline title="Engineering Blogs" text="Engineering Blogs">
+      <outline title="Percona Database Performance" text="Percona Database Performance" type="rss" xmlUrl="https://www.percona.com/blog/feed/"/>
+      <outline title="Lyft Engineering" text="Lyft Engineering" type="rss" xmlUrl="https://eng.lyft.com/feed"/>
+      <outline title="Uber Engineering Blog" text="Uber Engineering Blog" type="rss" xmlUrl="https://eng.uber.com/feed/"/>
+      <outline title="GitHub Engineering Blog" text="GitHub Engineering Blog" type="rss" xmlUrl="https://github.blog/engineering.atom"/>
+      <outline title="LinkedIn Engineering" text="LinkedIn Engineering" type="rss" xmlUrl="https://engineering.linkedin.com/blog.rss.html"/>
+      <outline title="Facebook Engineering" text="Facebook Engineering" type="rss" xmlUrl="https://engineering.fb.com/feed/"/>
+<!--       <outline title="Twitter Engineering" text="Twitter Engineering" type="rss" xmlUrl="https://blog.twitter.com/engineering/en_us/blog.rss"/> -->
+      <outline title="AWS Databases" text="AWS Databases" type="rss" xmlUrl="https://aws.amazon.com/blogs/database/feed/"/>
+      <outline title="AWS Containers" text="AWS Containers" type="rss" xmlUrl="https://aws.amazon.com/blogs/containers/feed/"/>
+      <outline title="AWS Compute" text="AWS Compute" type="rss" xmlUrl="https://aws.amazon.com/blogs/compute/feed/"/>
+      <outline title="Netflix TechBlog" text="Netflix TechBlog" type="rss" xmlUrl="https://netflixtechblog.com/feed"/>
+    </outline>
+  </body>
+</opml>
