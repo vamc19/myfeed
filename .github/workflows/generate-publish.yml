@@ -33,15 +33,14 @@ jobs:
       - name: Create CNAME
         run: |
           echo "feed.mostlypointless.dev" > ./myfeed/docs/CNAME
-          echo "feed.mostlypointless.dev"
-          ls -lah myfeed/docs/
 
       - name: Commit changes
         working-directory: myfeed
         run: |
           git config --global user.name "Vamsi Atluri"
           git config --global user.email "vamc19@gmail.com"
-          git commit -am "Automated commit from gh-actions"
+          git add .
+          git diff --quiet --cached || git commit -m "Automated commit from gh-actions"
 
       - name: Push updates
         uses: ad-m/github-push-action@master
