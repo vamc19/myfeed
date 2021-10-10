@@ -29,7 +29,9 @@ jobs:
         run: |
           python3 -m pip install -r staticfeed/requirements.txt
           python3 staticfeed/cli.py --opml=myfeed/feed.opml --cache-dir=myfeed/cache --output-dir=myfeed/docs --theme-dir=staticfeed/theme
-          echo "feed.mostlypointless.dev" > myfeed/CNAME
+          
+      - name: Create CNAME
+        run: echo "feed.mostlypointless.dev" > ./myfeed/docs/CNAME
 
       - name: Commit changes
         working-directory: myfeed
