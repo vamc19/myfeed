@@ -1,0 +1,43 @@
+name: Gererate and publish staticfeed
+on:
+  schedule:
+    - cron: '0 15 * * *'
+jobs:
+  generate_rss_feed:
+    name: Generate and publish staticfeed
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout myfeed
+        uses: actions/checkout@v2
+        with:
+          path: myfeed
+
+      - name: Checkout staticfeed
+        uses: actions/checkout@v2
+        with:
+          repository: vamc19/staticfeed
+          path: staticfeed
+
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+
+      - name: Generate feed
+        run: |
+          python3 -m pip install -r staticfeed/requirements.txt
+          python python staticfeed/cli.py --opml=myfeed/feed.opml --cache-dir=myfeed/cache --output-dir=myfeed/docs --theme-dir=staticfeed/theme
+
+      - name: Commit changes
+        working-directory: myfeed
+        run: |
+          git config --global user.name "Vamsi Atluri"
+          git config --global user.email "vamc19@gmail.com"
+          git commit -am "Automated commit from gh-actions"
+
+      - name: Push updates
+        working-directory: myfeed
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
