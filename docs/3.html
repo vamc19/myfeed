@@ -1,133 +1,360 @@
 <html lang="en">
 <head>
     <title>Static Feed</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+            font-family: system-ui;
+        }
+        .entry-list {
+            width: 100%;
+        }
+        .entry {
+            align-items: center;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px dashed #222;
+        }
+        .entry-title {
+            width: 100%;
+        }
+        .entry-details {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+            font-size: small;
+            margin-top: 5px;
+        }
+        .entry-details .entry-date {
+            text-align: right;
+        }
+        .next-page {
+            text-align: center;
+        }
+
+        @media (min-width: 1200px) {
+            .container { max-width: 960px; }
+        }
+        @media (max-width: 768px) {
+            .container { max-width: 100%; }
+        }
+    </style>
 </head>
 <body>
-    <ul>
-        
-            <li>
-                <a href="https://netflixtechblog.com/how-we-build-micro-frontends-with-lattice-22b8635f77ea?source=rss----2615bd06b42e---4">How We Build Micro Frontends With Lattice</a>
-            </li>
-        
-            <li>
-                <a href="https://aws.amazon.com/blogs/database/implement-active-active-replication-between-amazon-aurora-clusters-using-oracle-goldengate/">Implement active/active replication between Amazon Aurora clusters using Oracle GoldenGate</a>
-            </li>
-        
-            <li>
-                <a href="https://aws.amazon.com/blogs/database/replicate-and-transform-data-in-amazon-aurora-postgresql-across-multiple-regions-using-aws-dms/">Replicate and transform data in Amazon Aurora PostgreSQL across multiple Regions using AWS DMS</a>
-            </li>
-        
-            <li>
-                <a href="https://engineering.linkedin.com/blog/2021/distributed-tier-merge">Distributed tier merge: How LinkedIn tackles stragglers in search index build</a>
-            </li>
-        
-            <li>
-                <a href="https://aws.amazon.com/blogs/compute/creating-a-serverless-face-blurring-service-for-photos-in-amazon-s3/">Creating a serverless face blurring service for photos in Amazon S3</a>
-            </li>
-        
-            <li>
-                <a href="https://devblogs.microsoft.com/oldnewthing/20210927-00/?p=105733">Why am I getting an unresolved external from C++/WinRT if it is a header-only C++ library?</a>
-            </li>
-        
-            <li>
-                <a href="https://jvns.ca/blog/2021/09/24/new-tool--an-nginx-playground/">New tool: an nginx playground</a>
-            </li>
-        
-            <li>
-                <a href="https://eng.uber.com/real-time-exactly-once-ad-event-processing/">Real-Time Exactly-Once Ad Event Processing with Apache Flink, Kafka, and Pinot</a>
-            </li>
-        
-            <li>
-                <a href="https://aws.amazon.com/blogs/containers/using-amazon-ecr-replication-rules-to-optimize-your-application-delivery-process/">Using Amazon ECR replication rules to optimize your application delivery process</a>
-            </li>
-        
-            <li>
-                <a href="https://aws.amazon.com/blogs/compute/managing-federated-schema-with-aws-lambda-and-amazon-s3/">Managing federated schema with AWS Lambda and Amazon S3</a>
-            </li>
-        
-            <li>
-                <a href="https://aws.amazon.com/blogs/database/automate-amazon-aurora-global-database-endpoint-management/">Automate Amazon Aurora Global Database endpoint management</a>
-            </li>
-        
-            <li>
-                <a href="https://aws.amazon.com/blogs/database/trigger-notifications-on-time-series-data-with-amazon-timestream/">Trigger notifications on time series data with Amazon Timestream</a>
-            </li>
-        
-            <li>
-                <a href="https://aws.amazon.com/blogs/compute/getting-started-with-testing-serverless-applications/">Getting started with testing serverless applications</a>
-            </li>
-        
-            <li>
-                <a href="https://aws.amazon.com/blogs/compute/building-federated-graphql-on-aws-lambda/">Building federated GraphQL on AWS Lambda</a>
-            </li>
-        
-            <li>
-                <a href="https://aws.amazon.com/blogs/database/evaluate-amazon-documentdb-with-mongodb-compatibility-configurations-using-aws-config/">Evaluate Amazon DocumentDB (with MongoDB compatibility) configurations using AWS Config</a>
-            </li>
-        
-            <li>
-                <a href="https://jvns.ca/blog/2021/09/20/teaching-by-filling-in-knowledge-gaps/">Teaching by filling in knowledge gaps</a>
-            </li>
-        
-            <li>
-                <a href="https://aws.amazon.com/blogs/containers/container-insights-for-amazon-eks-support-aws-distro-for-opentelemetry-collector/">Container Insights for Amazon EKS Support AWS Distro for OpenTelemetry Collector</a>
-            </li>
-        
-            <li>
-                <a href="https://aws.amazon.com/blogs/containers/how-to-automate-amazon-eks-preventative-controls-in-ci-cd-using-cdk-and-opa-conftest/">How to automate Amazon EKS preventative controls in CI/CD using CDK and OPA/Conftest</a>
-            </li>
-        
-            <li>
-                <a href="https://eng.uber.com/streamlining-mobile-data-workflow-process/">YAML Generator for Funnel YAML Files: Streamlining the Mobile Data Workflow Process</a>
-            </li>
-        
-            <li>
-                <a href="https://jvns.ca/blog/2021/09/16/debugging-in-a-repl-is-fun/">Debugging by starting a REPL at a breakpoint is fun</a>
-            </li>
-        
-            <li>
-                <a href="https://aws.amazon.com/blogs/containers/connect-any-kubernetes-cluster-to-amazon-eks/">Connect any Kubernetes cluster to Amazon EKS</a>
-            </li>
-        
-            <li>
-                <a href="https://netflixtechblog.com/practical-api-design-at-netflix-part-1-using-protobuf-fieldmask-35cfdc606518?source=rss----2615bd06b42e---4">Practical API Design at Netflix, Part 1: Using Protobuf FieldMask</a>
-            </li>
-        
-            <li>
-                <a href="https://netflixtechblog.com/practical-api-design-at-netflix-part-2-protobuf-fieldmask-for-mutation-operations-2e75e1d230e4?source=rss----2615bd06b42e---4">Practical API Design at Netflix, Part 2: Protobuf FieldMask for Mutation Operations</a>
-            </li>
-        
-            <li>
-                <a href="https://aws.amazon.com/blogs/database/automate-benchmark-tests-for-amazon-aurora-postgresql/">Automate benchmark tests for Amazon Aurora PostgreSQL</a>
-            </li>
-        
-            <li>
-                <a href="https://aws.amazon.com/blogs/compute/optimize-costs-by-up-to-70-with-new-amazon-t3-dedicated-hosts/">Optimize costs by up to 70% with new Amazon T3 Dedicated Hosts</a>
-            </li>
-        
-            <li>
-                <a href="https://netflixtechblog.com/the-show-must-go-on-securing-netflix-studios-at-scale-19b801c86479?source=rss----2615bd06b42e---4">The Show Must Go On: Securing Netflix Studios At Scale</a>
-            </li>
-        
-            <li>
-                <a href="https://aws.amazon.com/blogs/database/connect-to-amazon-keyspaces-from-your-desktop-using-intellij-pycharm-or-datagrip-ides/">Connect to Amazon Keyspaces from your desktop using IntelliJ, PyCharm, or DataGrip IDEs</a>
-            </li>
-        
-            <li>
-                <a href="https://aws.amazon.com/blogs/compute/building-a-serverless-gif-generator-with-aws-lambda-part-2/">Building a serverless GIF generator with AWS Lambda: Part 2</a>
-            </li>
-        
-            <li>
-                <a href="https://engineering.fb.com/2021/09/13/core-data/superpack/">Superpack: Pushing the limits of compression in Facebook’s mobile apps</a>
-            </li>
-        
-            <li>
-                <a href="https://aws.amazon.com/blogs/compute/enabling-parallel-file-systems-in-the-cloud-with-amazon-ec2-part-i-beegfs/">Enabling parallel file systems in the cloud with Amazon EC2 (Part I: BeeGFS)</a>
-            </li>
-        
-    </ul>
-    
-        <a href="4.html"> Next Page </a>
-    
+    <div class="container">
+        <div class="entry-list">
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://engineering.fb.com/2021/09/28/connectivity/2africa-pearls/">2Africa Pearls subsea cable connects Africa, Europe, and Asia to bring affordable, high-speed internet to 3 billion people</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> Facebook Engineering </span>
+                        <time class="entry-date"> 2021-09-28T07:01:36 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://netflixtechblog.com/how-we-build-micro-frontends-with-lattice-22b8635f77ea?source=rss----2615bd06b42e---4">How We Build Micro Frontends With Lattice</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> Netflix TechBlog - Medium </span>
+                        <time class="entry-date"> 2021-09-27T18:31:54 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://aws.amazon.com/blogs/database/implement-active-active-replication-between-amazon-aurora-clusters-using-oracle-goldengate/">Implement active/active replication between Amazon Aurora clusters using Oracle GoldenGate</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> AWS Database Blog </span>
+                        <time class="entry-date"> 2021-09-27T18:20:13 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://aws.amazon.com/blogs/database/replicate-and-transform-data-in-amazon-aurora-postgresql-across-multiple-regions-using-aws-dms/">Replicate and transform data in Amazon Aurora PostgreSQL across multiple Regions using AWS DMS</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> AWS Database Blog </span>
+                        <time class="entry-date"> 2021-09-27T17:26:56 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://engineering.linkedin.com/blog/2021/distributed-tier-merge">Distributed tier merge: How LinkedIn tackles stragglers in search index build</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> LinkedIn Engineering </span>
+                        <time class="entry-date"> 2021-09-27T17:14:00 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://aws.amazon.com/blogs/compute/creating-a-serverless-face-blurring-service-for-photos-in-amazon-s3/">Creating a serverless face blurring service for photos in Amazon S3</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> AWS Compute Blog </span>
+                        <time class="entry-date"> 2021-09-27T14:40:09 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://jvns.ca/blog/2021/09/24/new-tool--an-nginx-playground/">New tool: an nginx playground</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> Julia Evans </span>
+                        <time class="entry-date"> 2021-09-24T08:25:33 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://eng.uber.com/real-time-exactly-once-ad-event-processing/">Real-Time Exactly-Once Ad Event Processing with Apache Flink, Kafka, and Pinot</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> Uber Engineering Blog </span>
+                        <time class="entry-date"> 2021-09-23T16:00:42 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://aws.amazon.com/blogs/containers/using-amazon-ecr-replication-rules-to-optimize-your-application-delivery-process/">Using Amazon ECR replication rules to optimize your application delivery process</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> Containers </span>
+                        <time class="entry-date"> 2021-09-22T15:50:32 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://aws.amazon.com/blogs/compute/managing-federated-schema-with-aws-lambda-and-amazon-s3/">Managing federated schema with AWS Lambda and Amazon S3</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> AWS Compute Blog </span>
+                        <time class="entry-date"> 2021-09-22T15:02:45 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://aws.amazon.com/blogs/database/automate-amazon-aurora-global-database-endpoint-management/">Automate Amazon Aurora Global Database endpoint management</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> AWS Database Blog </span>
+                        <time class="entry-date"> 2021-09-22T13:08:44 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://aws.amazon.com/blogs/database/trigger-notifications-on-time-series-data-with-amazon-timestream/">Trigger notifications on time series data with Amazon Timestream</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> AWS Database Blog </span>
+                        <time class="entry-date"> 2021-09-21T18:36:23 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://aws.amazon.com/blogs/compute/getting-started-with-testing-serverless-applications/">Getting started with testing serverless applications</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> AWS Compute Blog </span>
+                        <time class="entry-date"> 2021-09-20T18:37:07 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://aws.amazon.com/blogs/compute/building-federated-graphql-on-aws-lambda/">Building federated GraphQL on AWS Lambda</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> AWS Compute Blog </span>
+                        <time class="entry-date"> 2021-09-20T15:01:12 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://aws.amazon.com/blogs/database/evaluate-amazon-documentdb-with-mongodb-compatibility-configurations-using-aws-config/">Evaluate Amazon DocumentDB (with MongoDB compatibility) configurations using AWS Config</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> AWS Database Blog </span>
+                        <time class="entry-date"> 2021-09-20T13:50:22 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://jvns.ca/blog/2021/09/20/teaching-by-filling-in-knowledge-gaps/">Teaching by filling in knowledge gaps</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> Julia Evans </span>
+                        <time class="entry-date"> 2021-09-20T09:28:40 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://aws.amazon.com/blogs/containers/container-insights-for-amazon-eks-support-aws-distro-for-opentelemetry-collector/">Container Insights for Amazon EKS Support AWS Distro for OpenTelemetry Collector</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> Containers </span>
+                        <time class="entry-date"> 2021-09-17T18:15:17 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://aws.amazon.com/blogs/containers/how-to-automate-amazon-eks-preventative-controls-in-ci-cd-using-cdk-and-opa-conftest/">How to automate Amazon EKS preventative controls in CI/CD using CDK and OPA/Conftest</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> Containers </span>
+                        <time class="entry-date"> 2021-09-17T01:32:02 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://eng.uber.com/streamlining-mobile-data-workflow-process/">YAML Generator for Funnel YAML Files: Streamlining the Mobile Data Workflow Process</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> Uber Engineering Blog </span>
+                        <time class="entry-date"> 2021-09-16T16:00:32 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://jvns.ca/blog/2021/09/16/debugging-in-a-repl-is-fun/">Debugging by starting a REPL at a breakpoint is fun</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> Julia Evans </span>
+                        <time class="entry-date"> 2021-09-16T08:48:58 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://aws.amazon.com/blogs/containers/connect-any-kubernetes-cluster-to-amazon-eks/">Connect any Kubernetes cluster to Amazon EKS</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> Containers </span>
+                        <time class="entry-date"> 2021-09-15T19:05:46 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://netflixtechblog.com/practical-api-design-at-netflix-part-1-using-protobuf-fieldmask-35cfdc606518?source=rss----2615bd06b42e---4">Practical API Design at Netflix, Part 1: Using Protobuf FieldMask</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> Netflix TechBlog - Medium </span>
+                        <time class="entry-date"> 2021-09-15T16:16:11 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://netflixtechblog.com/practical-api-design-at-netflix-part-2-protobuf-fieldmask-for-mutation-operations-2e75e1d230e4?source=rss----2615bd06b42e---4">Practical API Design at Netflix, Part 2: Protobuf FieldMask for Mutation Operations</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> Netflix TechBlog - Medium </span>
+                        <time class="entry-date"> 2021-09-15T14:32:53 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://aws.amazon.com/blogs/database/automate-benchmark-tests-for-amazon-aurora-postgresql/">Automate benchmark tests for Amazon Aurora PostgreSQL</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> AWS Database Blog </span>
+                        <time class="entry-date"> 2021-09-15T14:23:34 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://aws.amazon.com/blogs/compute/optimize-costs-by-up-to-70-with-new-amazon-t3-dedicated-hosts/">Optimize costs by up to 70% with new Amazon T3 Dedicated Hosts</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> AWS Compute Blog </span>
+                        <time class="entry-date"> 2021-09-14T22:43:29 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://netflixtechblog.com/the-show-must-go-on-securing-netflix-studios-at-scale-19b801c86479?source=rss----2615bd06b42e---4">The Show Must Go On: Securing Netflix Studios At Scale</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> Netflix TechBlog - Medium </span>
+                        <time class="entry-date"> 2021-09-14T20:20:30 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://aws.amazon.com/blogs/database/connect-to-amazon-keyspaces-from-your-desktop-using-intellij-pycharm-or-datagrip-ides/">Connect to Amazon Keyspaces from your desktop using IntelliJ, PyCharm, or DataGrip IDEs</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> AWS Database Blog </span>
+                        <time class="entry-date"> 2021-09-14T12:29:08 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://aws.amazon.com/blogs/compute/building-a-serverless-gif-generator-with-aws-lambda-part-2/">Building a serverless GIF generator with AWS Lambda: Part 2</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> AWS Compute Blog </span>
+                        <time class="entry-date"> 2021-09-13T15:00:18 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://engineering.fb.com/2021/09/13/core-data/superpack/">Superpack: Pushing the limits of compression in Facebook’s mobile apps</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> Facebook Engineering </span>
+                        <time class="entry-date"> 2021-09-13T13:00:26 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://aws.amazon.com/blogs/compute/enabling-parallel-file-systems-in-the-cloud-with-amazon-ec2-part-i-beegfs/">Enabling parallel file systems in the cloud with Amazon EC2 (Part I: BeeGFS)</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> AWS Compute Blog </span>
+                        <time class="entry-date"> 2021-09-10T20:39:35 </time>
+                    </div>
+                </div>
+            
+            
+                <div class="next-page">
+                    <a href="4.html"> Next Page </a>
+                </div>
+            
+        </div>
+    </div>
 </body>
 </html>

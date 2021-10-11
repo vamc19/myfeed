@@ -1,133 +1,360 @@
 <html lang="en">
 <head>
     <title>Static Feed</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+            font-family: system-ui;
+        }
+        .entry-list {
+            width: 100%;
+        }
+        .entry {
+            align-items: center;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px dashed #222;
+        }
+        .entry-title {
+            width: 100%;
+        }
+        .entry-details {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+            font-size: small;
+            margin-top: 5px;
+        }
+        .entry-details .entry-date {
+            text-align: right;
+        }
+        .next-page {
+            text-align: center;
+        }
+
+        @media (min-width: 1200px) {
+            .container { max-width: 960px; }
+        }
+        @media (max-width: 768px) {
+            .container { max-width: 100%; }
+        }
+    </style>
 </head>
 <body>
-    <ul>
-        
-            <li>
-                <a href="https://eng.uber.com/cost-efficient-big-data-platform/">Cost-Efficient Open Source Big Data Platform at Uber</a>
-            </li>
-        
-            <li>
-                <a href="https://engineering.linkedin.com/blog/2021/lambda-learner--nearline-learning-on-data-streams">Lambda Learner: Nearline learning on data streams</a>
-            </li>
-        
-            <li>
-                <a href="https://eng.uber.com/challenges-opportunities-to-reduce-cost-ubers-big-data/">Challenges and Opportunities to Dramatically Reduce the Cost of Uber’s Big Data</a>
-            </li>
-        
-            <li>
-                <a href="https://engineering.linkedin.com/blog/2021/building-microsoft-powered-native-video-meetings-on-linkedin">Building Microsoft-powered native video meetings on LinkedIn</a>
-            </li>
-        
-            <li>
-                <a href="http://www.micahlerner.com/2021/08/07/posh-a-data-aware-shell.html">POSH: A Data-Aware Shell</a>
-            </li>
-        
-            <li>
-                <a href="https://engineering.linkedin.com/blog/2021/dualip-solving-extreme-scale-linear-programs">DuaLip: Solving extreme-scale linear programs for web applications</a>
-            </li>
-        
-            <li>
-                <a href="https://eng.uber.com/operational-excellence-data-quality/">How Uber Achieves Operational Excellence in the Data Quality Experience</a>
-            </li>
-        
-            <li>
-                <a href="https://engineering.linkedin.com/blog/2021/optimizing-pymk-for-equity-in-network-creation">Optimizing People You May Know (PYMK) for equity in network creation</a>
-            </li>
-        
-            <li>
-                <a href="https://eng.lyft.com/what-to-expect-when-interviewing-as-a-data-scientist-intern-at-lyft-42a6d475cb81?source=rss----25cd379abb8---4">What to Expect When Interviewing as a Data Scientist Intern at Lyft</a>
-            </li>
-        
-            <li>
-                <a href="https://eng.uber.com/ubers-finance-computation-platform/">Uber’s Finance Computation Platform</a>
-            </li>
-        
-            <li>
-                <a href="http://www.micahlerner.com/2021/07/31/pash-light-touch-data-parallel-shell-processing.html">PaSh: Light-touch Data-Parallel Shell Processing</a>
-            </li>
-        
-            <li>
-                <a href="http://www.micahlerner.com/2021/07/24/from-laptop-to-lambda-outsourcing-everyday-jobs-to-thousands-of-transient-functional-containers.html">From Laptop to Lambda: Outsourcing Everyday Jobs to Thousands of Transient Functional Containers</a>
-            </li>
-        
-            <li>
-                <a href="https://engineering.linkedin.com/blog/2021/new-recruiter---jobs--the-largest-enterprise-data-migration-at-l">New Recruiter & Jobs: The largest enterprise data migration at LinkedIn</a>
-            </li>
-        
-            <li>
-                <a href="https://eng.lyft.com/building-an-enterprise-intellij-plugin-for-android-developers-e265c0038203?source=rss----25cd379abb8---4">Building an Enterprise IntelliJ Plugin for Android Developers</a>
-            </li>
-        
-            <li>
-                <a href="http://www.micahlerner.com/2021/07/14/unix-shell-programming-the-next-50-years.html">Unix Shell Programming: The Next 50 Years (The Future of the Shell, Part I)</a>
-            </li>
-        
-            <li>
-                <a href="https://eng.lyft.com/using-client-side-map-data-to-improve-real-time-positioning-a382585ac6e?source=rss----25cd379abb8---4">Using Client-Side Map Data to Improve Real-Time Positioning</a>
-            </li>
-        
-            <li>
-                <a href="https://jvns.ca/blog/2021/07/08/writing-great-examples/">Write good examples by starting with real code</a>
-            </li>
-        
-            <li>
-                <a href="http://www.micahlerner.com/2021/07/07/breakfast-of-champions-towards-zero-copy-serialization-with-nic-scatter-gather.html">Breakfast of Champions: Towards Zero-Copy Serialization with NIC Scatter-Gather</a>
-            </li>
-        
-            <li>
-                <a href="https://github.blog/2021-07-07-github-availability-report-june-2021/">GitHub Availability Report: June 2021</a>
-            </li>
-        
-            <li>
-                <a href="https://github.blog/2021-07-12-adding-support-cross-cluster-associations-rails-7/">Adding support for cross-cluster associations to Rails 7</a>
-            </li>
-        
-            <li>
-                <a href="https://github.blog/2021-06-22-framework-building-open-graph-images/">A framework for building Open Graph images</a>
-            </li>
-        
-            <li>
-                <a href="http://www.micahlerner.com/2021/06/27/ray-a-distributed-framework-for-emerging-ai-applications.html">Ray: A Distributed Framework for Emerging AI Applications</a>
-            </li>
-        
-            <li>
-                <a href="http://www.micahlerner.com/2021/06/17/firecracker-lightweight-virtualization-for-serverless-applications.html">Firecracker: Lightweight Virtualization for Serverless Applications</a>
-            </li>
-        
-            <li>
-                <a href="https://eng.lyft.com/a-b-tests-for-lyft-hardware-570330b488d4?source=rss----25cd379abb8---4">A/B Tests for Lyft Hardware</a>
-            </li>
-        
-            <li>
-                <a href="https://jvns.ca/blog/2021/06/08/reasons-why-bugs-might-feel-impossible/">Reasons why bugs might feel "impossible"</a>
-            </li>
-        
-            <li>
-                <a href="https://github.blog/2021-06-02-github-availability-report-may-2021/">GitHub Availability Report: May 2021</a>
-            </li>
-        
-            <li>
-                <a href="https://jvns.ca/blog/2021/06/02/you-can-now-buy-print-version-of-my-zines-/">You can now buy print version of my zines!</a>
-            </li>
-        
-            <li>
-                <a href="https://eng.lyft.com/introducing-lyft-engineering-kyiv-2884d1bba69a?source=rss----25cd379abb8---4">Introducing Lyft Engineering: Kyiv!</a>
-            </li>
-        
-            <li>
-                <a href="https://jvns.ca/blog/2021/05/24/blog-about-what-you-ve-struggled-with/">Blog about what you've struggled with</a>
-            </li>
-        
-            <li>
-                <a href="https://eng.lyft.com/chaos-experimentation-an-open-source-framework-built-on-top-of-envoy-proxy-df87519ed681?source=rss----25cd379abb8---4">Chaos Experimentation, an open-source framework built on top of Envoy Proxy</a>
-            </li>
-        
-    </ul>
-    
-        <a href="6.html"> Next Page </a>
-    
+    <div class="container">
+        <div class="entry-list">
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://eng.uber.com/cost-efficient-big-data-platform/">Cost-Efficient Open Source Big Data Platform at Uber</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> Uber Engineering Blog </span>
+                        <time class="entry-date"> 2021-08-11T16:00:47 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://engineering.linkedin.com/blog/2021/lambda-learner--nearline-learning-on-data-streams">Lambda Learner: Nearline learning on data streams</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> LinkedIn Engineering </span>
+                        <time class="entry-date"> 2021-08-11T14:34:00 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://eng.uber.com/challenges-opportunities-to-reduce-cost-ubers-big-data/">Challenges and Opportunities to Dramatically Reduce the Cost of Uber’s Big Data</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> Uber Engineering Blog </span>
+                        <time class="entry-date"> 2021-08-09T17:30:58 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://engineering.linkedin.com/blog/2021/building-microsoft-powered-native-video-meetings-on-linkedin">Building Microsoft-powered native video meetings on LinkedIn</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> LinkedIn Engineering </span>
+                        <time class="entry-date"> 2021-08-09T13:06:00 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="http://www.micahlerner.com/2021/08/07/posh-a-data-aware-shell.html">POSH: A Data-Aware Shell</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> www.micahlerner.com </span>
+                        <time class="entry-date"> 2021-08-07T07:00:00 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://engineering.linkedin.com/blog/2021/dualip-solving-extreme-scale-linear-programs">DuaLip: Solving extreme-scale linear programs for web applications</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> LinkedIn Engineering </span>
+                        <time class="entry-date"> 2021-08-06T15:44:00 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://eng.uber.com/operational-excellence-data-quality/">How Uber Achieves Operational Excellence in the Data Quality Experience</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> Uber Engineering Blog </span>
+                        <time class="entry-date"> 2021-08-05T16:00:21 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://engineering.linkedin.com/blog/2021/optimizing-pymk-for-equity-in-network-creation">Optimizing People You May Know (PYMK) for equity in network creation</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> LinkedIn Engineering </span>
+                        <time class="entry-date"> 2021-08-05T13:00:00 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://eng.lyft.com/what-to-expect-when-interviewing-as-a-data-scientist-intern-at-lyft-42a6d475cb81?source=rss----25cd379abb8---4">What to Expect When Interviewing as a Data Scientist Intern at Lyft</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> Lyft Engineering - Medium </span>
+                        <time class="entry-date"> 2021-08-03T17:37:25 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://eng.uber.com/ubers-finance-computation-platform/">Uber’s Finance Computation Platform</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> Uber Engineering Blog </span>
+                        <time class="entry-date"> 2021-08-03T16:00:24 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="http://www.micahlerner.com/2021/07/31/pash-light-touch-data-parallel-shell-processing.html">PaSh: Light-touch Data-Parallel Shell Processing</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> www.micahlerner.com </span>
+                        <time class="entry-date"> 2021-07-31T07:00:00 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="http://www.micahlerner.com/2021/07/24/from-laptop-to-lambda-outsourcing-everyday-jobs-to-thousands-of-transient-functional-containers.html">From Laptop to Lambda: Outsourcing Everyday Jobs to Thousands of Transient Functional Containers</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> www.micahlerner.com </span>
+                        <time class="entry-date"> 2021-07-24T07:00:00 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://engineering.linkedin.com/blog/2021/new-recruiter---jobs--the-largest-enterprise-data-migration-at-l">New Recruiter & Jobs: The largest enterprise data migration at LinkedIn</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> LinkedIn Engineering </span>
+                        <time class="entry-date"> 2021-07-23T16:20:00 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://eng.lyft.com/building-an-enterprise-intellij-plugin-for-android-developers-e265c0038203?source=rss----25cd379abb8---4">Building an Enterprise IntelliJ Plugin for Android Developers</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> Lyft Engineering - Medium </span>
+                        <time class="entry-date"> 2021-07-20T16:59:14 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="http://www.micahlerner.com/2021/07/14/unix-shell-programming-the-next-50-years.html">Unix Shell Programming: The Next 50 Years (The Future of the Shell, Part I)</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> www.micahlerner.com </span>
+                        <time class="entry-date"> 2021-07-14T07:00:00 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://eng.lyft.com/using-client-side-map-data-to-improve-real-time-positioning-a382585ac6e?source=rss----25cd379abb8---4">Using Client-Side Map Data to Improve Real-Time Positioning</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> Lyft Engineering - Medium </span>
+                        <time class="entry-date"> 2021-07-13T19:44:23 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://jvns.ca/blog/2021/07/08/writing-great-examples/">Write good examples by starting with real code</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> Julia Evans </span>
+                        <time class="entry-date"> 2021-07-08T11:00:46 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="http://www.micahlerner.com/2021/07/07/breakfast-of-champions-towards-zero-copy-serialization-with-nic-scatter-gather.html">Breakfast of Champions: Towards Zero-Copy Serialization with NIC Scatter-Gather</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> www.micahlerner.com </span>
+                        <time class="entry-date"> 2021-07-08T00:00:00 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://github.blog/2021-07-07-github-availability-report-june-2021/">GitHub Availability Report: June 2021</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> Engineering – The GitHub Blog </span>
+                        <time class="entry-date"> 2021-07-03T00:49:02 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://github.blog/2021-07-12-adding-support-cross-cluster-associations-rails-7/">Adding support for cross-cluster associations to Rails 7</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> Engineering – The GitHub Blog </span>
+                        <time class="entry-date"> 2021-07-02T15:39:41 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://github.blog/2021-06-22-framework-building-open-graph-images/">A framework for building Open Graph images</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> Engineering – The GitHub Blog </span>
+                        <time class="entry-date"> 2021-06-30T23:40:01 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="http://www.micahlerner.com/2021/06/27/ray-a-distributed-framework-for-emerging-ai-applications.html">Ray: A Distributed Framework for Emerging AI Applications</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> www.micahlerner.com </span>
+                        <time class="entry-date"> 2021-06-27T07:00:00 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://eng.lyft.com/a-b-tests-for-lyft-hardware-570330b488d4?source=rss----25cd379abb8---4">A/B Tests for Lyft Hardware</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> Lyft Engineering - Medium </span>
+                        <time class="entry-date"> 2021-06-16T19:35:53 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://jvns.ca/blog/2021/06/08/reasons-why-bugs-might-feel-impossible/">Reasons why bugs might feel "impossible"</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> Julia Evans </span>
+                        <time class="entry-date"> 2021-06-08T09:28:08 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://github.blog/2021-06-02-github-availability-report-may-2021/">GitHub Availability Report: May 2021</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> Engineering – The GitHub Blog </span>
+                        <time class="entry-date"> 2021-06-03T00:00:00 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://jvns.ca/blog/2021/06/02/you-can-now-buy-print-version-of-my-zines-/">You can now buy print version of my zines!</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> Julia Evans </span>
+                        <time class="entry-date"> 2021-06-02T10:48:15 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://eng.lyft.com/introducing-lyft-engineering-kyiv-2884d1bba69a?source=rss----25cd379abb8---4">Introducing Lyft Engineering: Kyiv!</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> Lyft Engineering - Medium </span>
+                        <time class="entry-date"> 2021-05-27T15:23:24 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://jvns.ca/blog/2021/05/24/blog-about-what-you-ve-struggled-with/">Blog about what you've struggled with</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> Julia Evans </span>
+                        <time class="entry-date"> 2021-05-24T13:59:07 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://eng.lyft.com/chaos-experimentation-an-open-source-framework-built-on-top-of-envoy-proxy-df87519ed681?source=rss----25cd379abb8---4">Chaos Experimentation, an open-source framework built on top of Envoy Proxy</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> Lyft Engineering - Medium </span>
+                        <time class="entry-date"> 2021-05-19T17:55:39 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://jvns.ca/blog/2021/05/17/how-to-look-at-the-stack-in-gdb/">How to look at the stack with gdb</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> Julia Evans </span>
+                        <time class="entry-date"> 2021-05-17T09:14:37 </time>
+                    </div>
+                </div>
+            
+            
+                <div class="next-page">
+                    <a href="6.html"> Next Page </a>
+                </div>
+            
+        </div>
+    </div>
 </body>
 </html>

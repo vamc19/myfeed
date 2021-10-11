@@ -1,31 +1,96 @@
 <html lang="en">
 <head>
     <title>Static Feed</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+            font-family: system-ui;
+        }
+        .entry-list {
+            width: 100%;
+        }
+        .entry {
+            align-items: center;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px dashed #222;
+        }
+        .entry-title {
+            width: 100%;
+        }
+        .entry-details {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+            font-size: small;
+            margin-top: 5px;
+        }
+        .entry-details .entry-date {
+            text-align: right;
+        }
+        .next-page {
+            text-align: center;
+        }
+
+        @media (min-width: 1200px) {
+            .container { max-width: 960px; }
+        }
+        @media (max-width: 768px) {
+            .container { max-width: 100%; }
+        }
+    </style>
 </head>
 <body>
-    <ul>
-        
-            <li>
-                <a href="https://jvns.ca/blog/2021/05/17/how-to-look-at-the-stack-in-gdb/">How to look at the stack with gdb</a>
-            </li>
-        
-            <li>
-                <a href="https://eng.lyft.com/lyftlearn-ml-model-training-infrastructure-built-on-kubernetes-aef8218842bb?source=rss----25cd379abb8---4">LyftLearn: ML Model Training Infrastructure built on Kubernetes</a>
-            </li>
-        
-            <li>
-                <a href="https://jvns.ca/blog/2021/05/11/what-s-the-osi-model-/">The OSI model doesn't map well to TCP/IP</a>
-            </li>
-        
-            <li>
-                <a href="https://jvns.ca/blog/2021/05/02/publishing-comics/">I put all of my comics online!</a>
-            </li>
-        
-            <li>
-                <a href="https://jvns.ca/blog/2021/04/16/notes-on-debugging-puzzles/">Notes on building debugging puzzles</a>
-            </li>
-        
-    </ul>
-    
+    <div class="container">
+        <div class="entry-list">
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://eng.lyft.com/lyftlearn-ml-model-training-infrastructure-built-on-kubernetes-aef8218842bb?source=rss----25cd379abb8---4">LyftLearn: ML Model Training Infrastructure built on Kubernetes</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> Lyft Engineering - Medium </span>
+                        <time class="entry-date"> 2021-05-12T15:39:54 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://jvns.ca/blog/2021/05/11/what-s-the-osi-model-/">The OSI model doesn't map well to TCP/IP</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> Julia Evans </span>
+                        <time class="entry-date"> 2021-05-11T14:58:41 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://jvns.ca/blog/2021/05/02/publishing-comics/">I put all of my comics online!</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> Julia Evans </span>
+                        <time class="entry-date"> 2021-05-02T11:41:59 </time>
+                    </div>
+                </div>
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://jvns.ca/blog/2021/04/16/notes-on-debugging-puzzles/">Notes on building debugging puzzles</a>
+                    </div>
+                    <div class="entry-details">
+                        <span> Julia Evans </span>
+                        <time class="entry-date"> 2021-04-16T09:02:55 </time>
+                    </div>
+                </div>
+            
+            
+        </div>
+    </div>
 </body>
 </html>
