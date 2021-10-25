@@ -1,13 +1,23 @@
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <title>Static Feed</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
         .container {
             margin-left: auto;
             margin-right: auto;
             font-family: system-ui;
+        }
+        .page-header {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        .page-header > h2 {
+            margin-bottom: 5px;
+        }
+        .page-header > p {
+            margin-top: 5px;
         }
         .entry-list {
             width: 100%;
@@ -30,13 +40,27 @@
             font-size: small;
             margin-top: 5px;
         }
+        .entry-details .entry-sub a {
+            text-decoration: none;
+            color: black;
+        }
+        .entry-details .entry-sub a:hover {
+            text-decoration: underline;
+        }
         .entry-details .entry-date {
             text-align: right;
         }
         .next-page {
             text-align: center;
+            margin: 15px;
         }
-
+        footer {
+            display: block;
+            text-align: center;
+            font-size: smaller;
+            border-top: 1px solid #222;
+            padding: 5px;
+        }
         @media (min-width: 1200px) {
             .container { max-width: 960px; }
         }
@@ -47,14 +71,30 @@
 </head>
 <body>
     <div class="container">
+        <div class="page-header">
+            
+                <h2>Latest Feed</h2>
+            
+            
+        </div>
         <div class="entry-list">
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://engineering.linkedin.com/blog/2021/optimizing-pymk-for-equity-in-network-creation">Optimizing People You May Know (PYMK) for equity in network creation</a>
+                    </div>
+                    <div class="entry-details">
+                        <span class="entry-sub"> <a href="5ed317c5842b0316d406852e1759f7c7b1cad39aba2af470a59fd7bd6e00a08a.html"> LinkedIn Engineering</a> </span>
+                        <time class="entry-date"> 2021-08-05T13:00:00 </time>
+                    </div>
+                </div>
             
                 <div class="entry">
                     <div class="entry-title">
                         <a href="https://eng.lyft.com/what-to-expect-when-interviewing-as-a-data-scientist-intern-at-lyft-42a6d475cb81?source=rss----25cd379abb8---4">What to Expect When Interviewing as a Data Scientist Intern at Lyft</a>
                     </div>
                     <div class="entry-details">
-                        <span> Lyft Engineering - Medium </span>
+                        <span class="entry-sub"> <a href="233c741d29ecb8a6646aca3de91f81c694b4bca3e8b117e9489b23141a962f84.html"> Lyft Engineering - Medium</a> </span>
                         <time class="entry-date"> 2021-08-03T17:37:25 </time>
                     </div>
                 </div>
@@ -64,7 +104,7 @@
                         <a href="http://www.micahlerner.com/2021/07/31/pash-light-touch-data-parallel-shell-processing.html">PaSh: Light-touch Data-Parallel Shell Processing</a>
                     </div>
                     <div class="entry-details">
-                        <span> www.micahlerner.com </span>
+                        <span class="entry-sub"> <a href="622223b6ed380510242b334256891284dc5b292bb8e5851c4dcdb8fee3a2a63b.html"> www.micahlerner.com</a> </span>
                         <time class="entry-date"> 2021-07-31T07:00:00 </time>
                     </div>
                 </div>
@@ -74,7 +114,7 @@
                         <a href="http://www.micahlerner.com/2021/07/24/from-laptop-to-lambda-outsourcing-everyday-jobs-to-thousands-of-transient-functional-containers.html">From Laptop to Lambda: Outsourcing Everyday Jobs to Thousands of Transient Functional Containers</a>
                     </div>
                     <div class="entry-details">
-                        <span> www.micahlerner.com </span>
+                        <span class="entry-sub"> <a href="622223b6ed380510242b334256891284dc5b292bb8e5851c4dcdb8fee3a2a63b.html"> www.micahlerner.com</a> </span>
                         <time class="entry-date"> 2021-07-24T07:00:00 </time>
                     </div>
                 </div>
@@ -84,7 +124,7 @@
                         <a href="https://engineering.linkedin.com/blog/2021/new-recruiter---jobs--the-largest-enterprise-data-migration-at-l">New Recruiter & Jobs: The largest enterprise data migration at LinkedIn</a>
                     </div>
                     <div class="entry-details">
-                        <span> LinkedIn Engineering </span>
+                        <span class="entry-sub"> <a href="5ed317c5842b0316d406852e1759f7c7b1cad39aba2af470a59fd7bd6e00a08a.html"> LinkedIn Engineering</a> </span>
                         <time class="entry-date"> 2021-07-23T16:20:00 </time>
                     </div>
                 </div>
@@ -94,7 +134,7 @@
                         <a href="https://eng.lyft.com/building-an-enterprise-intellij-plugin-for-android-developers-e265c0038203?source=rss----25cd379abb8---4">Building an Enterprise IntelliJ Plugin for Android Developers</a>
                     </div>
                     <div class="entry-details">
-                        <span> Lyft Engineering - Medium </span>
+                        <span class="entry-sub"> <a href="233c741d29ecb8a6646aca3de91f81c694b4bca3e8b117e9489b23141a962f84.html"> Lyft Engineering - Medium</a> </span>
                         <time class="entry-date"> 2021-07-20T16:59:14 </time>
                     </div>
                 </div>
@@ -104,7 +144,7 @@
                         <a href="http://www.micahlerner.com/2021/07/14/unix-shell-programming-the-next-50-years.html">Unix Shell Programming: The Next 50 Years (The Future of the Shell, Part I)</a>
                     </div>
                     <div class="entry-details">
-                        <span> www.micahlerner.com </span>
+                        <span class="entry-sub"> <a href="622223b6ed380510242b334256891284dc5b292bb8e5851c4dcdb8fee3a2a63b.html"> www.micahlerner.com</a> </span>
                         <time class="entry-date"> 2021-07-14T07:00:00 </time>
                     </div>
                 </div>
@@ -114,7 +154,7 @@
                         <a href="https://eng.lyft.com/using-client-side-map-data-to-improve-real-time-positioning-a382585ac6e?source=rss----25cd379abb8---4">Using Client-Side Map Data to Improve Real-Time Positioning</a>
                     </div>
                     <div class="entry-details">
-                        <span> Lyft Engineering - Medium </span>
+                        <span class="entry-sub"> <a href="233c741d29ecb8a6646aca3de91f81c694b4bca3e8b117e9489b23141a962f84.html"> Lyft Engineering - Medium</a> </span>
                         <time class="entry-date"> 2021-07-13T19:44:23 </time>
                     </div>
                 </div>
@@ -124,7 +164,7 @@
                         <a href="https://jvns.ca/blog/2021/07/08/writing-great-examples/">Write good examples by starting with real code</a>
                     </div>
                     <div class="entry-details">
-                        <span> Julia Evans </span>
+                        <span class="entry-sub"> <a href="860a0ab01850b99c696e42b4ec8fb2b3ccb963a087804b02c19dd0c4e69511a8.html"> Julia Evans</a> </span>
                         <time class="entry-date"> 2021-07-08T11:00:46 </time>
                     </div>
                 </div>
@@ -134,7 +174,7 @@
                         <a href="http://www.micahlerner.com/2021/07/07/breakfast-of-champions-towards-zero-copy-serialization-with-nic-scatter-gather.html">Breakfast of Champions: Towards Zero-Copy Serialization with NIC Scatter-Gather</a>
                     </div>
                     <div class="entry-details">
-                        <span> www.micahlerner.com </span>
+                        <span class="entry-sub"> <a href="622223b6ed380510242b334256891284dc5b292bb8e5851c4dcdb8fee3a2a63b.html"> www.micahlerner.com</a> </span>
                         <time class="entry-date"> 2021-07-08T00:00:00 </time>
                     </div>
                 </div>
@@ -144,7 +184,7 @@
                         <a href="https://github.blog/2021-07-07-github-availability-report-june-2021/">GitHub Availability Report: June 2021</a>
                     </div>
                     <div class="entry-details">
-                        <span> Engineering – The GitHub Blog </span>
+                        <span class="entry-sub"> <a href="465f6a4c6326a8f2a7e09bc715b947e0ec86babffe20aa7c0d33dd831f8866f8.html"> Engineering – The GitHub Blog</a> </span>
                         <time class="entry-date"> 2021-07-03T00:49:02 </time>
                     </div>
                 </div>
@@ -154,7 +194,7 @@
                         <a href="https://github.blog/2021-07-12-adding-support-cross-cluster-associations-rails-7/">Adding support for cross-cluster associations to Rails 7</a>
                     </div>
                     <div class="entry-details">
-                        <span> Engineering – The GitHub Blog </span>
+                        <span class="entry-sub"> <a href="465f6a4c6326a8f2a7e09bc715b947e0ec86babffe20aa7c0d33dd831f8866f8.html"> Engineering – The GitHub Blog</a> </span>
                         <time class="entry-date"> 2021-07-02T15:39:41 </time>
                     </div>
                 </div>
@@ -164,7 +204,7 @@
                         <a href="https://github.blog/2021-06-22-framework-building-open-graph-images/">A framework for building Open Graph images</a>
                     </div>
                     <div class="entry-details">
-                        <span> Engineering – The GitHub Blog </span>
+                        <span class="entry-sub"> <a href="465f6a4c6326a8f2a7e09bc715b947e0ec86babffe20aa7c0d33dd831f8866f8.html"> Engineering – The GitHub Blog</a> </span>
                         <time class="entry-date"> 2021-06-30T23:40:01 </time>
                     </div>
                 </div>
@@ -174,7 +214,7 @@
                         <a href="http://www.micahlerner.com/2021/06/27/ray-a-distributed-framework-for-emerging-ai-applications.html">Ray: A Distributed Framework for Emerging AI Applications</a>
                     </div>
                     <div class="entry-details">
-                        <span> www.micahlerner.com </span>
+                        <span class="entry-sub"> <a href="622223b6ed380510242b334256891284dc5b292bb8e5851c4dcdb8fee3a2a63b.html"> www.micahlerner.com</a> </span>
                         <time class="entry-date"> 2021-06-27T07:00:00 </time>
                     </div>
                 </div>
@@ -184,7 +224,7 @@
                         <a href="https://eng.lyft.com/a-b-tests-for-lyft-hardware-570330b488d4?source=rss----25cd379abb8---4">A/B Tests for Lyft Hardware</a>
                     </div>
                     <div class="entry-details">
-                        <span> Lyft Engineering - Medium </span>
+                        <span class="entry-sub"> <a href="233c741d29ecb8a6646aca3de91f81c694b4bca3e8b117e9489b23141a962f84.html"> Lyft Engineering - Medium</a> </span>
                         <time class="entry-date"> 2021-06-16T19:35:53 </time>
                     </div>
                 </div>
@@ -194,7 +234,7 @@
                         <a href="https://jvns.ca/blog/2021/06/08/reasons-why-bugs-might-feel-impossible/">Reasons why bugs might feel "impossible"</a>
                     </div>
                     <div class="entry-details">
-                        <span> Julia Evans </span>
+                        <span class="entry-sub"> <a href="860a0ab01850b99c696e42b4ec8fb2b3ccb963a087804b02c19dd0c4e69511a8.html"> Julia Evans</a> </span>
                         <time class="entry-date"> 2021-06-08T09:28:08 </time>
                     </div>
                 </div>
@@ -204,7 +244,7 @@
                         <a href="https://github.blog/2021-06-02-github-availability-report-may-2021/">GitHub Availability Report: May 2021</a>
                     </div>
                     <div class="entry-details">
-                        <span> Engineering – The GitHub Blog </span>
+                        <span class="entry-sub"> <a href="465f6a4c6326a8f2a7e09bc715b947e0ec86babffe20aa7c0d33dd831f8866f8.html"> Engineering – The GitHub Blog</a> </span>
                         <time class="entry-date"> 2021-06-03T00:00:00 </time>
                     </div>
                 </div>
@@ -214,7 +254,7 @@
                         <a href="https://jvns.ca/blog/2021/06/02/you-can-now-buy-print-version-of-my-zines-/">You can now buy print version of my zines!</a>
                     </div>
                     <div class="entry-details">
-                        <span> Julia Evans </span>
+                        <span class="entry-sub"> <a href="860a0ab01850b99c696e42b4ec8fb2b3ccb963a087804b02c19dd0c4e69511a8.html"> Julia Evans</a> </span>
                         <time class="entry-date"> 2021-06-02T10:48:15 </time>
                     </div>
                 </div>
@@ -224,7 +264,7 @@
                         <a href="https://eng.lyft.com/introducing-lyft-engineering-kyiv-2884d1bba69a?source=rss----25cd379abb8---4">Introducing Lyft Engineering: Kyiv!</a>
                     </div>
                     <div class="entry-details">
-                        <span> Lyft Engineering - Medium </span>
+                        <span class="entry-sub"> <a href="233c741d29ecb8a6646aca3de91f81c694b4bca3e8b117e9489b23141a962f84.html"> Lyft Engineering - Medium</a> </span>
                         <time class="entry-date"> 2021-05-27T15:23:24 </time>
                     </div>
                 </div>
@@ -234,7 +274,7 @@
                         <a href="https://jvns.ca/blog/2021/05/24/blog-about-what-you-ve-struggled-with/">Blog about what you've struggled with</a>
                     </div>
                     <div class="entry-details">
-                        <span> Julia Evans </span>
+                        <span class="entry-sub"> <a href="860a0ab01850b99c696e42b4ec8fb2b3ccb963a087804b02c19dd0c4e69511a8.html"> Julia Evans</a> </span>
                         <time class="entry-date"> 2021-05-24T13:59:07 </time>
                     </div>
                 </div>
@@ -244,7 +284,7 @@
                         <a href="https://eng.lyft.com/chaos-experimentation-an-open-source-framework-built-on-top-of-envoy-proxy-df87519ed681?source=rss----25cd379abb8---4">Chaos Experimentation, an open-source framework built on top of Envoy Proxy</a>
                     </div>
                     <div class="entry-details">
-                        <span> Lyft Engineering - Medium </span>
+                        <span class="entry-sub"> <a href="233c741d29ecb8a6646aca3de91f81c694b4bca3e8b117e9489b23141a962f84.html"> Lyft Engineering - Medium</a> </span>
                         <time class="entry-date"> 2021-05-19T17:55:39 </time>
                     </div>
                 </div>
@@ -254,7 +294,7 @@
                         <a href="https://jvns.ca/blog/2021/05/17/how-to-look-at-the-stack-in-gdb/">How to look at the stack with gdb</a>
                     </div>
                     <div class="entry-details">
-                        <span> Julia Evans </span>
+                        <span class="entry-sub"> <a href="860a0ab01850b99c696e42b4ec8fb2b3ccb963a087804b02c19dd0c4e69511a8.html"> Julia Evans</a> </span>
                         <time class="entry-date"> 2021-05-17T09:14:37 </time>
                     </div>
                 </div>
@@ -264,7 +304,7 @@
                         <a href="https://eng.lyft.com/lyftlearn-ml-model-training-infrastructure-built-on-kubernetes-aef8218842bb?source=rss----25cd379abb8---4">LyftLearn: ML Model Training Infrastructure built on Kubernetes</a>
                     </div>
                     <div class="entry-details">
-                        <span> Lyft Engineering - Medium </span>
+                        <span class="entry-sub"> <a href="233c741d29ecb8a6646aca3de91f81c694b4bca3e8b117e9489b23141a962f84.html"> Lyft Engineering - Medium</a> </span>
                         <time class="entry-date"> 2021-05-12T15:39:54 </time>
                     </div>
                 </div>
@@ -274,7 +314,7 @@
                         <a href="https://jvns.ca/blog/2021/05/11/what-s-the-osi-model-/">The OSI model doesn't map well to TCP/IP</a>
                     </div>
                     <div class="entry-details">
-                        <span> Julia Evans </span>
+                        <span class="entry-sub"> <a href="860a0ab01850b99c696e42b4ec8fb2b3ccb963a087804b02c19dd0c4e69511a8.html"> Julia Evans</a> </span>
                         <time class="entry-date"> 2021-05-11T14:58:41 </time>
                     </div>
                 </div>
@@ -284,13 +324,16 @@
                         <a href="https://jvns.ca/blog/2021/05/02/publishing-comics/">I put all of my comics online!</a>
                     </div>
                     <div class="entry-details">
-                        <span> Julia Evans </span>
+                        <span class="entry-sub"> <a href="860a0ab01850b99c696e42b4ec8fb2b3ccb963a087804b02c19dd0c4e69511a8.html"> Julia Evans</a> </span>
                         <time class="entry-date"> 2021-05-02T11:41:59 </time>
                     </div>
                 </div>
             
-            
         </div>
+        
+        <footer>
+            <span>Last refreshed on Mon 25 Oct, 2021 at 07:22 UTC</span>
+        </footer>
     </div>
 </body>
 </html>

@@ -1,13 +1,23 @@
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <title>Static Feed</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
         .container {
             margin-left: auto;
             margin-right: auto;
             font-family: system-ui;
+        }
+        .page-header {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        .page-header > h2 {
+            margin-bottom: 5px;
+        }
+        .page-header > p {
+            margin-top: 5px;
         }
         .entry-list {
             width: 100%;
@@ -30,13 +40,27 @@
             font-size: small;
             margin-top: 5px;
         }
+        .entry-details .entry-sub a {
+            text-decoration: none;
+            color: black;
+        }
+        .entry-details .entry-sub a:hover {
+            text-decoration: underline;
+        }
         .entry-details .entry-date {
             text-align: right;
         }
         .next-page {
             text-align: center;
+            margin: 15px;
         }
-
+        footer {
+            display: block;
+            text-align: center;
+            font-size: smaller;
+            border-top: 1px solid #222;
+            padding: 5px;
+        }
         @media (min-width: 1200px) {
             .container { max-width: 960px; }
         }
@@ -47,14 +71,30 @@
 </head>
 <body>
     <div class="container">
+        <div class="page-header">
+            
+                <h2>Latest Feed</h2>
+            
+            
+        </div>
         <div class="entry-list">
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://jvns.ca/blog/2021/09/10/hashmaps-make-things-fast/">Quadratic algorithms are slow (and hashmaps are fast)</a>
+                    </div>
+                    <div class="entry-details">
+                        <span class="entry-sub"> <a href="860a0ab01850b99c696e42b4ec8fb2b3ccb963a087804b02c19dd0c4e69511a8.html"> Julia Evans</a> </span>
+                        <time class="entry-date"> 2021-09-10T12:48:10 </time>
+                    </div>
+                </div>
             
                 <div class="entry">
                     <div class="entry-title">
                         <a href="https://eng.uber.com/jellyfish-cost-effective-data-tiering/">Jellyfish: Cost-Effective Data Tiering for Uber’s Largest Storage System</a>
                     </div>
                     <div class="entry-details">
-                        <span> Uber Engineering Blog </span>
+                        <span class="entry-sub"> <a href="a091519b7bd165a5824ed3e5aec10e3dd3f22df5a0440e572ed6f1ec0a13a5ee.html"> Uber Engineering Blog</a> </span>
                         <time class="entry-date"> 2021-09-09T16:00:19 </time>
                     </div>
                 </div>
@@ -64,7 +104,7 @@
                         <a href="https://engineering.linkedin.com/blog/2021/scaling-linkedin-s-hadoop-yarn-cluster-beyond-10-000-nodes">Scaling LinkedIn's Hadoop YARN cluster beyond 10,000 nodes</a>
                     </div>
                     <div class="entry-details">
-                        <span> LinkedIn Engineering </span>
+                        <span class="entry-sub"> <a href="5ed317c5842b0316d406852e1759f7c7b1cad39aba2af470a59fd7bd6e00a08a.html"> LinkedIn Engineering</a> </span>
                         <time class="entry-date"> 2021-09-08T15:36:00 </time>
                     </div>
                 </div>
@@ -74,7 +114,7 @@
                         <a href="https://github.blog/2021-09-07-increasing-developer-happiness-github-code-scanning/">Increasing developer happiness with GitHub code scanning</a>
                     </div>
                     <div class="entry-details">
-                        <span> Engineering – The GitHub Blog </span>
+                        <span class="entry-sub"> <a href="465f6a4c6326a8f2a7e09bc715b947e0ec86babffe20aa7c0d33dd831f8866f8.html"> Engineering – The GitHub Blog</a> </span>
                         <time class="entry-date"> 2021-09-07T16:13:30 </time>
                     </div>
                 </div>
@@ -84,7 +124,7 @@
                         <a href="https://engineering.linkedin.com/blog/2021/using-deep-learning-to-detect-abusive-sequences-of-member-activi">Using deep learning to detect abusive sequences of member activity</a>
                     </div>
                     <div class="entry-details">
-                        <span> LinkedIn Engineering </span>
+                        <span class="entry-sub"> <a href="5ed317c5842b0316d406852e1759f7c7b1cad39aba2af470a59fd7bd6e00a08a.html"> LinkedIn Engineering</a> </span>
                         <time class="entry-date"> 2021-09-02T18:05:00 </time>
                     </div>
                 </div>
@@ -94,7 +134,7 @@
                         <a href="https://eng.lyft.com/lastmile-cli-simulate-all-the-things-87928bce29ec?source=rss----25cd379abb8---4">Lastmile CLI: Simulate all the things</a>
                     </div>
                     <div class="entry-details">
-                        <span> Lyft Engineering - Medium </span>
+                        <span class="entry-sub"> <a href="233c741d29ecb8a6646aca3de91f81c694b4bca3e8b117e9489b23141a962f84.html"> Lyft Engineering - Medium</a> </span>
                         <time class="entry-date"> 2021-09-02T16:32:21 </time>
                     </div>
                 </div>
@@ -104,7 +144,7 @@
                         <a href="https://eng.uber.com/streaming-real-time-analytics/">Streaming Real-Time Analytics with Redis, AWS Fargate, and Dash Framework</a>
                     </div>
                     <div class="entry-details">
-                        <span> Uber Engineering Blog </span>
+                        <span class="entry-sub"> <a href="a091519b7bd165a5824ed3e5aec10e3dd3f22df5a0440e572ed6f1ec0a13a5ee.html"> Uber Engineering Blog</a> </span>
                         <time class="entry-date"> 2021-09-02T16:00:50 </time>
                     </div>
                 </div>
@@ -114,7 +154,7 @@
                         <a href="https://engineering.fb.com/2021/09/02/open-source/cachelib/">CacheLib, Facebook’s open source caching engine for web-scale services</a>
                     </div>
                     <div class="entry-details">
-                        <span> Facebook Engineering </span>
+                        <span class="entry-sub"> <a href="bc4d10019cb473c0221985b6f21b21044357b13bcd979ef0b8ad326ecddcc4f6.html"> Facebook Engineering</a> </span>
                         <time class="entry-date"> 2021-09-02T16:00:27 </time>
                     </div>
                 </div>
@@ -124,7 +164,7 @@
                         <a href="https://github.blog/2021-09-01-github-availability-report-august-2021/">GitHub Availability Report: August 2021</a>
                     </div>
                     <div class="entry-details">
-                        <span> Engineering – The GitHub Blog </span>
+                        <span class="entry-sub"> <a href="465f6a4c6326a8f2a7e09bc715b947e0ec86babffe20aa7c0d33dd831f8866f8.html"> Engineering – The GitHub Blog</a> </span>
                         <time class="entry-date"> 2021-09-01T17:12:05 </time>
                     </div>
                 </div>
@@ -134,7 +174,7 @@
                         <a href="https://eng.uber.com/kafka-async-queuing-with-consumer-proxy/">Enabling Seamless Kafka Async Queuing with Consumer Proxy</a>
                     </div>
                     <div class="entry-details">
-                        <span> Uber Engineering Blog </span>
+                        <span class="entry-sub"> <a href="a091519b7bd165a5824ed3e5aec10e3dd3f22df5a0440e572ed6f1ec0a13a5ee.html"> Uber Engineering Blog</a> </span>
                         <time class="entry-date"> 2021-08-31T16:00:32 </time>
                     </div>
                 </div>
@@ -144,7 +184,7 @@
                         <a href="https://netflixtechblog.com/towards-a-reliable-device-management-platform-4f86230ca623?source=rss----2615bd06b42e---4">Towards a Reliable Device Management Platform</a>
                     </div>
                     <div class="entry-details">
-                        <span> Netflix TechBlog - Medium </span>
+                        <span class="entry-sub"> <a href="cde22301ccca2028bc131c440bce03a62b9cc9a11cc19f24763f89517d616e28.html"> Netflix TechBlog - Medium</a> </span>
                         <time class="entry-date"> 2021-08-30T22:59:04 </time>
                     </div>
                 </div>
@@ -154,7 +194,7 @@
                         <a href="http://www.micahlerner.com/2021/08/29/a-linux-kernel-implementation-of-the-homa-transport-protocol.html">A Linux Kernel Implementation of the Homa Transport Protocol, Part II</a>
                     </div>
                     <div class="entry-details">
-                        <span> www.micahlerner.com </span>
+                        <span class="entry-sub"> <a href="622223b6ed380510242b334256891284dc5b292bb8e5851c4dcdb8fee3a2a63b.html"> www.micahlerner.com</a> </span>
                         <time class="entry-date"> 2021-08-29T07:00:00 </time>
                     </div>
                 </div>
@@ -164,7 +204,7 @@
                         <a href="https://eng.uber.com/how-data-shapes-the-uber-rider-app/">How Data Shapes the Uber Rider App</a>
                     </div>
                     <div class="entry-details">
-                        <span> Uber Engineering Blog </span>
+                        <span class="entry-sub"> <a href="a091519b7bd165a5824ed3e5aec10e3dd3f22df5a0440e572ed6f1ec0a13a5ee.html"> Uber Engineering Blog</a> </span>
                         <time class="entry-date"> 2021-08-26T16:00:20 </time>
                     </div>
                 </div>
@@ -174,7 +214,7 @@
                         <a href="https://engineering.linkedin.com/blog/2021/http-2-in-infrastructure--ambry-network-stack-refactoring">HTTP/2 in infrastructure: Ambry network stack refactoring</a>
                     </div>
                     <div class="entry-details">
-                        <span> LinkedIn Engineering </span>
+                        <span class="entry-sub"> <a href="5ed317c5842b0316d406852e1759f7c7b1cad39aba2af470a59fd7bd6e00a08a.html"> LinkedIn Engineering</a> </span>
                         <time class="entry-date"> 2021-08-24T17:00:00 </time>
                     </div>
                 </div>
@@ -184,7 +224,7 @@
                         <a href="https://eng.uber.com/building-scalable-streaming-pipelines/">Building Scalable Streaming Pipelines for Near Real-Time Features</a>
                     </div>
                     <div class="entry-details">
-                        <span> Uber Engineering Blog </span>
+                        <span class="entry-sub"> <a href="a091519b7bd165a5824ed3e5aec10e3dd3f22df5a0440e572ed6f1ec0a13a5ee.html"> Uber Engineering Blog</a> </span>
                         <time class="entry-date"> 2021-08-24T16:00:51 </time>
                     </div>
                 </div>
@@ -194,7 +234,7 @@
                         <a href="https://eng.uber.com/eats-safety-team-on-call-overview/">Eats Safety Team On-Call Overview</a>
                     </div>
                     <div class="entry-details">
-                        <span> Uber Engineering Blog </span>
+                        <span class="entry-sub"> <a href="a091519b7bd165a5824ed3e5aec10e3dd3f22df5a0440e572ed6f1ec0a13a5ee.html"> Uber Engineering Blog</a> </span>
                         <time class="entry-date"> 2021-08-19T16:00:52 </time>
                     </div>
                 </div>
@@ -204,7 +244,7 @@
                         <a href="https://jvns.ca/blog/confusing-explanations/">Patterns in confusing explanations</a>
                     </div>
                     <div class="entry-details">
-                        <span> Julia Evans </span>
+                        <span class="entry-sub"> <a href="860a0ab01850b99c696e42b4ec8fb2b3ccb963a087804b02c19dd0c4e69511a8.html"> Julia Evans</a> </span>
                         <time class="entry-date"> 2021-08-19T02:13:26 </time>
                     </div>
                 </div>
@@ -214,7 +254,7 @@
                         <a href="https://engineering.fb.com/2021/08/18/core-data/ramp-tao/">RAMP-TAO: Layering atomic transactions on Facebook’s online graph store</a>
                     </div>
                     <div class="entry-details">
-                        <span> Facebook Engineering </span>
+                        <span class="entry-sub"> <a href="bc4d10019cb473c0221985b6f21b21044357b13bcd979ef0b8ad326ecddcc4f6.html"> Facebook Engineering</a> </span>
                         <time class="entry-date"> 2021-08-18T16:00:37 </time>
                     </div>
                 </div>
@@ -224,7 +264,7 @@
                         <a href="https://eng.uber.com/personalized-customer-support-experiences/">Unifying Support Content to Enable More Empathetic and Personalized Customer Support Experiences</a>
                     </div>
                     <div class="entry-details">
-                        <span> Uber Engineering Blog </span>
+                        <span class="entry-sub"> <a href="a091519b7bd165a5824ed3e5aec10e3dd3f22df5a0440e572ed6f1ec0a13a5ee.html"> Uber Engineering Blog</a> </span>
                         <time class="entry-date"> 2021-08-17T16:00:58 </time>
                     </div>
                 </div>
@@ -234,7 +274,7 @@
                         <a href="https://github.blog/2021-08-04-github-availability-report-july-2021/">GitHub Availability Report: July 2021</a>
                     </div>
                     <div class="entry-details">
-                        <span> Engineering – The GitHub Blog </span>
+                        <span class="entry-sub"> <a href="465f6a4c6326a8f2a7e09bc715b947e0ec86babffe20aa7c0d33dd831f8866f8.html"> Engineering – The GitHub Blog</a> </span>
                         <time class="entry-date"> 2021-08-17T01:30:26 </time>
                     </div>
                 </div>
@@ -244,7 +284,7 @@
                         <a href="http://www.micahlerner.com/2021/08/15/a-linux-kernel-implementation-of-the-homa-transport-protocol.html">Homa: A Receiver-Driven Low-Latency Transport Protocol Using Network Priorities, Part I</a>
                     </div>
                     <div class="entry-details">
-                        <span> www.micahlerner.com </span>
+                        <span class="entry-sub"> <a href="622223b6ed380510242b334256891284dc5b292bb8e5851c4dcdb8fee3a2a63b.html"> www.micahlerner.com</a> </span>
                         <time class="entry-date"> 2021-08-15T07:00:00 </time>
                     </div>
                 </div>
@@ -254,7 +294,7 @@
                         <a href="http://www.micahlerner.com/2021/08/14/systems-conferences-2021.html">Systems Conferences 2021</a>
                     </div>
                     <div class="entry-details">
-                        <span> www.micahlerner.com </span>
+                        <span class="entry-sub"> <a href="622223b6ed380510242b334256891284dc5b292bb8e5851c4dcdb8fee3a2a63b.html"> www.micahlerner.com</a> </span>
                         <time class="entry-date"> 2021-08-14T07:00:00 </time>
                     </div>
                 </div>
@@ -264,7 +304,7 @@
                         <a href="https://eng.uber.com/supply-demand-big-data-platform/">Efficiently Managing the Supply and Demand on Uber’s Big Data Platform</a>
                     </div>
                     <div class="entry-details">
-                        <span> Uber Engineering Blog </span>
+                        <span class="entry-sub"> <a href="a091519b7bd165a5824ed3e5aec10e3dd3f22df5a0440e572ed6f1ec0a13a5ee.html"> Uber Engineering Blog</a> </span>
                         <time class="entry-date"> 2021-08-13T16:00:16 </time>
                     </div>
                 </div>
@@ -274,7 +314,7 @@
                         <a href="https://eng.lyft.com/lessons-learned-one-remote-year-into-the-lyft-apm-program-6c9a252117bb?source=rss----25cd379abb8---4">Lessons Learned One Remote Year into the Lyft APM Program</a>
                     </div>
                     <div class="entry-details">
-                        <span> Lyft Engineering - Medium </span>
+                        <span class="entry-sub"> <a href="233c741d29ecb8a6646aca3de91f81c694b4bca3e8b117e9489b23141a962f84.html"> Lyft Engineering - Medium</a> </span>
                         <time class="entry-date"> 2021-08-11T16:14:31 </time>
                     </div>
                 </div>
@@ -284,7 +324,7 @@
                         <a href="https://eng.uber.com/cost-efficient-big-data-platform/">Cost-Efficient Open Source Big Data Platform at Uber</a>
                     </div>
                     <div class="entry-details">
-                        <span> Uber Engineering Blog </span>
+                        <span class="entry-sub"> <a href="a091519b7bd165a5824ed3e5aec10e3dd3f22df5a0440e572ed6f1ec0a13a5ee.html"> Uber Engineering Blog</a> </span>
                         <time class="entry-date"> 2021-08-11T16:00:47 </time>
                     </div>
                 </div>
@@ -294,7 +334,7 @@
                         <a href="https://engineering.linkedin.com/blog/2021/lambda-learner--nearline-learning-on-data-streams">Lambda Learner: Nearline learning on data streams</a>
                     </div>
                     <div class="entry-details">
-                        <span> LinkedIn Engineering </span>
+                        <span class="entry-sub"> <a href="5ed317c5842b0316d406852e1759f7c7b1cad39aba2af470a59fd7bd6e00a08a.html"> LinkedIn Engineering</a> </span>
                         <time class="entry-date"> 2021-08-11T14:34:00 </time>
                     </div>
                 </div>
@@ -304,7 +344,7 @@
                         <a href="https://eng.uber.com/challenges-opportunities-to-reduce-cost-ubers-big-data/">Challenges and Opportunities to Dramatically Reduce the Cost of Uber’s Big Data</a>
                     </div>
                     <div class="entry-details">
-                        <span> Uber Engineering Blog </span>
+                        <span class="entry-sub"> <a href="a091519b7bd165a5824ed3e5aec10e3dd3f22df5a0440e572ed6f1ec0a13a5ee.html"> Uber Engineering Blog</a> </span>
                         <time class="entry-date"> 2021-08-09T17:30:58 </time>
                     </div>
                 </div>
@@ -314,7 +354,7 @@
                         <a href="https://engineering.linkedin.com/blog/2021/building-microsoft-powered-native-video-meetings-on-linkedin">Building Microsoft-powered native video meetings on LinkedIn</a>
                     </div>
                     <div class="entry-details">
-                        <span> LinkedIn Engineering </span>
+                        <span class="entry-sub"> <a href="5ed317c5842b0316d406852e1759f7c7b1cad39aba2af470a59fd7bd6e00a08a.html"> LinkedIn Engineering</a> </span>
                         <time class="entry-date"> 2021-08-09T13:06:00 </time>
                     </div>
                 </div>
@@ -324,7 +364,7 @@
                         <a href="http://www.micahlerner.com/2021/08/07/posh-a-data-aware-shell.html">POSH: A Data-Aware Shell</a>
                     </div>
                     <div class="entry-details">
-                        <span> www.micahlerner.com </span>
+                        <span class="entry-sub"> <a href="622223b6ed380510242b334256891284dc5b292bb8e5851c4dcdb8fee3a2a63b.html"> www.micahlerner.com</a> </span>
                         <time class="entry-date"> 2021-08-07T07:00:00 </time>
                     </div>
                 </div>
@@ -334,27 +374,20 @@
                         <a href="https://engineering.linkedin.com/blog/2021/dualip-solving-extreme-scale-linear-programs">DuaLip: Solving extreme-scale linear programs for web applications</a>
                     </div>
                     <div class="entry-details">
-                        <span> LinkedIn Engineering </span>
+                        <span class="entry-sub"> <a href="5ed317c5842b0316d406852e1759f7c7b1cad39aba2af470a59fd7bd6e00a08a.html"> LinkedIn Engineering</a> </span>
                         <time class="entry-date"> 2021-08-06T15:44:00 </time>
                     </div>
                 </div>
             
-                <div class="entry">
-                    <div class="entry-title">
-                        <a href="https://engineering.linkedin.com/blog/2021/optimizing-pymk-for-equity-in-network-creation">Optimizing People You May Know (PYMK) for equity in network creation</a>
-                    </div>
-                    <div class="entry-details">
-                        <span> LinkedIn Engineering </span>
-                        <time class="entry-date"> 2021-08-05T13:00:00 </time>
-                    </div>
-                </div>
-            
-            
-                <div class="next-page">
-                    <a href="6.html"> Next Page </a>
-                </div>
-            
         </div>
+        
+            <div class="next-page">
+                <a href="index_6.html"> Next Page </a>
+            </div>
+        
+        <footer>
+            <span>Last refreshed on Mon 25 Oct, 2021 at 07:22 UTC</span>
+        </footer>
     </div>
 </body>
 </html>

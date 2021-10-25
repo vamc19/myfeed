@@ -1,13 +1,23 @@
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <title>Static Feed</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
         .container {
             margin-left: auto;
             margin-right: auto;
             font-family: system-ui;
+        }
+        .page-header {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        .page-header > h2 {
+            margin-bottom: 5px;
+        }
+        .page-header > p {
+            margin-top: 5px;
         }
         .entry-list {
             width: 100%;
@@ -30,13 +40,27 @@
             font-size: small;
             margin-top: 5px;
         }
+        .entry-details .entry-sub a {
+            text-decoration: none;
+            color: black;
+        }
+        .entry-details .entry-sub a:hover {
+            text-decoration: underline;
+        }
         .entry-details .entry-date {
             text-align: right;
         }
         .next-page {
             text-align: center;
+            margin: 15px;
         }
-
+        footer {
+            display: block;
+            text-align: center;
+            font-size: smaller;
+            border-top: 1px solid #222;
+            padding: 5px;
+        }
         @media (min-width: 1200px) {
             .container { max-width: 960px; }
         }
@@ -47,14 +71,30 @@
 </head>
 <body>
     <div class="container">
+        <div class="page-header">
+            
+                <h2>Latest Feed</h2>
+            
+            
+        </div>
         <div class="entry-list">
+            
+                <div class="entry">
+                    <div class="entry-title">
+                        <a href="https://netflixtechblog.com/revisiting-bettertls-certificate-path-building-4c978b79843f?source=rss----2615bd06b42e---4">Revisiting BetterTLS: Certificate Path Building</a>
+                    </div>
+                    <div class="entry-details">
+                        <span class="entry-sub"> <a href="cde22301ccca2028bc131c440bce03a62b9cc9a11cc19f24763f89517d616e28.html"> Netflix TechBlog - Medium</a> </span>
+                        <time class="entry-date"> 2021-10-14T19:15:43 </time>
+                    </div>
+                </div>
             
                 <div class="entry">
                     <div class="entry-title">
                         <a href="https://aws.amazon.com/blogs/compute/visualizing-aws-step-functions-workflows-from-the-aws-batch-console/">Visualizing AWS Step Functions workflows from the AWS Batch console</a>
                     </div>
                     <div class="entry-details">
-                        <span> AWS Compute Blog </span>
+                        <span class="entry-sub"> <a href="495505b9598ebe0ea2141ecc2fc32bbc0fba388b3c7c0d63db4f802774e55b5b.html"> AWS Compute Blog</a> </span>
                         <time class="entry-date"> 2021-10-14T18:52:16 </time>
                     </div>
                 </div>
@@ -64,7 +104,7 @@
                         <a href="https://aws.amazon.com/blogs/compute/accepting-api-keys-as-a-query-string-in-amazon-api-gateway/">Accepting API keys as a query string in Amazon API Gateway</a>
                     </div>
                     <div class="entry-details">
-                        <span> AWS Compute Blog </span>
+                        <span class="entry-sub"> <a href="495505b9598ebe0ea2141ecc2fc32bbc0fba388b3c7c0d63db4f802774e55b5b.html"> AWS Compute Blog</a> </span>
                         <time class="entry-date"> 2021-10-14T16:33:38 </time>
                     </div>
                 </div>
@@ -74,7 +114,7 @@
                         <a href="https://www.percona.com/blog/percona-is-a-finalist-for-best-use-of-open-source-technologies-in-2021/">Percona Is a Finalist for Best Use of Open Source Technologies in 2021!</a>
                     </div>
                     <div class="entry-details">
-                        <span> Percona Database Performance Blog </span>
+                        <span class="entry-sub"> <a href="bc6e5fc7b084f5f97dd23147b98ed2fb58beaf6c54359dd1a0e688768a45b11e.html"> Percona Database Performance Blog</a> </span>
                         <time class="entry-date"> 2021-10-14T15:10:38 </time>
                     </div>
                 </div>
@@ -84,7 +124,7 @@
                         <a href="https://aws.amazon.com/blogs/compute/using-jsonpath-effectively-in-aws-step-functions/">Using JSONPath effectively in AWS Step Functions</a>
                     </div>
                     <div class="entry-details">
-                        <span> AWS Compute Blog </span>
+                        <span class="entry-sub"> <a href="495505b9598ebe0ea2141ecc2fc32bbc0fba388b3c7c0d63db4f802774e55b5b.html"> AWS Compute Blog</a> </span>
                         <time class="entry-date"> 2021-10-14T14:45:40 </time>
                     </div>
                 </div>
@@ -94,7 +134,7 @@
                         <a href="https://aws.amazon.com/blogs/database/automate-cross-account-backups-of-amazon-rds-and-amazon-aurora-databases-with-aws-backup/">Automate cross-account backups of Amazon RDS and Amazon Aurora databases with AWS Backup</a>
                     </div>
                     <div class="entry-details">
-                        <span> AWS Database Blog </span>
+                        <span class="entry-sub"> <a href="e542d7720330a5a70cf7ef69b2320f2242ed7fb2597f025c1ad24517a15bc2bd.html"> AWS Database Blog</a> </span>
                         <time class="entry-date"> 2021-10-14T14:14:41 </time>
                     </div>
                 </div>
@@ -104,7 +144,7 @@
                         <a href="https://devblogs.microsoft.com/oldnewthing/20211014-00/?p=105800">Why does GetModuleInfo fail to produce an entry point for executables?</a>
                     </div>
                     <div class="entry-details">
-                        <span> The Old New Thing </span>
+                        <span class="entry-sub"> <a href="afae77b077c201ce023031cacc9aceec9a1a5c0230f3d19e9ca8e0b3f2dc184e.html"> The Old New Thing</a> </span>
                         <time class="entry-date"> 2021-10-14T14:00:00 </time>
                     </div>
                 </div>
@@ -114,7 +154,7 @@
                         <a href="https://www.percona.com/blog/custom-percona-monitoring-and-management-metrics-in-mysql-and-postgresql/">Custom Percona Monitoring and Management Metrics in MySQL and PostgreSQL</a>
                     </div>
                     <div class="entry-details">
-                        <span> Percona Database Performance Blog </span>
+                        <span class="entry-sub"> <a href="bc6e5fc7b084f5f97dd23147b98ed2fb58beaf6c54359dd1a0e688768a45b11e.html"> Percona Database Performance Blog</a> </span>
                         <time class="entry-date"> 2021-10-14T11:50:04 </time>
                     </div>
                 </div>
@@ -124,7 +164,7 @@
                         <a href="https://eng.lyft.com/powering-security-reports-with-cartography-and-flyte-fd02a4a96b2f?source=rss----25cd379abb8---4">Powering Security Reports with Cartography and Flyte</a>
                     </div>
                     <div class="entry-details">
-                        <span> Lyft Engineering - Medium </span>
+                        <span class="entry-sub"> <a href="233c741d29ecb8a6646aca3de91f81c694b4bca3e8b117e9489b23141a962f84.html"> Lyft Engineering - Medium</a> </span>
                         <time class="entry-date"> 2021-10-13T22:08:05 </time>
                     </div>
                 </div>
@@ -134,7 +174,7 @@
                         <a href="https://aws.amazon.com/blogs/containers/how-to-build-your-containers-for-arm-and-save-with-graviton-and-spot-instances-on-amazon-ecs/">How to build your containers for ARM and save with Graviton and Spot instances on Amazon ECS</a>
                     </div>
                     <div class="entry-details">
-                        <span> Containers </span>
+                        <span class="entry-sub"> <a href="904a04e043479133260482b9c1b18268d325452d4fdbb43411077481074a42a8.html"> Containers</a> </span>
                         <time class="entry-date"> 2021-10-13T21:01:06 </time>
                     </div>
                 </div>
@@ -144,7 +184,7 @@
                         <a href="https://eng.uber.com/improving-hdfs-i-o-utilization-for-efficiency/">Improving HDFS I/O Utilization for Efficiency</a>
                     </div>
                     <div class="entry-details">
-                        <span> Uber Engineering Blog </span>
+                        <span class="entry-sub"> <a href="a091519b7bd165a5824ed3e5aec10e3dd3f22df5a0440e572ed6f1ec0a13a5ee.html"> Uber Engineering Blog</a> </span>
                         <time class="entry-date"> 2021-10-13T16:00:31 </time>
                     </div>
                 </div>
@@ -154,7 +194,7 @@
                         <a href="https://aws.amazon.com/blogs/database/build-purpose-built-database-amis-using-amazon-ec2-image-builder/">Build purpose-built database AMIs using Amazon EC2 Image Builder</a>
                     </div>
                     <div class="entry-details">
-                        <span> AWS Database Blog </span>
+                        <span class="entry-sub"> <a href="e542d7720330a5a70cf7ef69b2320f2242ed7fb2597f025c1ad24517a15bc2bd.html"> AWS Database Blog</a> </span>
                         <time class="entry-date"> 2021-10-13T14:16:49 </time>
                     </div>
                 </div>
@@ -164,7 +204,7 @@
                         <a href="https://aws.amazon.com/blogs/database/cross-region-cross-account-disaster-recovery-using-amazon-aurora-global-database/">Cross-Region, cross-account disaster recovery using Amazon Aurora Global Database</a>
                     </div>
                     <div class="entry-details">
-                        <span> AWS Database Blog </span>
+                        <span class="entry-sub"> <a href="e542d7720330a5a70cf7ef69b2320f2242ed7fb2597f025c1ad24517a15bc2bd.html"> AWS Database Blog</a> </span>
                         <time class="entry-date"> 2021-10-13T14:07:53 </time>
                     </div>
                 </div>
@@ -174,7 +214,7 @@
                         <a href="https://devblogs.microsoft.com/oldnewthing/20211013-00/?p=105797">Local variables are different from parameters in C++ coroutines</a>
                     </div>
                     <div class="entry-details">
-                        <span> The Old New Thing </span>
+                        <span class="entry-sub"> <a href="afae77b077c201ce023031cacc9aceec9a1a5c0230f3d19e9ca8e0b3f2dc184e.html"> The Old New Thing</a> </span>
                         <time class="entry-date"> 2021-10-13T14:00:00 </time>
                     </div>
                 </div>
@@ -184,7 +224,7 @@
                         <a href="https://aws.amazon.com/blogs/database/build-and-load-test-a-multi-tenant-saas-database-proxy-solution-with-amazon-rds-proxy/">Build and load test a multi-tenant SaaS database proxy solution with Amazon RDS Proxy</a>
                     </div>
                     <div class="entry-details">
-                        <span> AWS Database Blog </span>
+                        <span class="entry-sub"> <a href="e542d7720330a5a70cf7ef69b2320f2242ed7fb2597f025c1ad24517a15bc2bd.html"> AWS Database Blog</a> </span>
                         <time class="entry-date"> 2021-10-13T13:57:43 </time>
                     </div>
                 </div>
@@ -194,7 +234,7 @@
                         <a href="https://www.percona.com/blog/migrating-mongodb-to-kubernetes">Migrating MongoDB to Kubernetes</a>
                     </div>
                     <div class="entry-details">
-                        <span> Percona Database Performance Blog </span>
+                        <span class="entry-sub"> <a href="bc6e5fc7b084f5f97dd23147b98ed2fb58beaf6c54359dd1a0e688768a45b11e.html"> Percona Database Performance Blog</a> </span>
                         <time class="entry-date"> 2021-10-13T12:35:20 </time>
                     </div>
                 </div>
@@ -204,7 +244,7 @@
                         <a href="http://www.micahlerner.com/2021/10/13/tao-facebooks-distributed-data-store-for-the-social-graph.html">TAO: Facebook’s Distributed Data Store for the Social Graph</a>
                     </div>
                     <div class="entry-details">
-                        <span> www.micahlerner.com </span>
+                        <span class="entry-sub"> <a href="622223b6ed380510242b334256891284dc5b292bb8e5851c4dcdb8fee3a2a63b.html"> www.micahlerner.com</a> </span>
                         <time class="entry-date"> 2021-10-13T07:00:00 </time>
                     </div>
                 </div>
@@ -214,7 +254,7 @@
                         <a href="https://netflixtechblog.com/cambi-a-banding-artifact-detector-96777ae12fe2?source=rss----2615bd06b42e---4">CAMBI, a banding artifact detector</a>
                     </div>
                     <div class="entry-details">
-                        <span> Netflix TechBlog - Medium </span>
+                        <span class="entry-sub"> <a href="cde22301ccca2028bc131c440bce03a62b9cc9a11cc19f24763f89517d616e28.html"> Netflix TechBlog - Medium</a> </span>
                         <time class="entry-date"> 2021-10-12T19:05:52 </time>
                     </div>
                 </div>
@@ -224,7 +264,7 @@
                         <a href="https://aws.amazon.com/blogs/containers/announcing-the-general-availability-of-cdk8s-and-support-for-go/">Announcing the general availability of cdk8s and support for Go</a>
                     </div>
                     <div class="entry-details">
-                        <span> Containers </span>
+                        <span class="entry-sub"> <a href="904a04e043479133260482b9c1b18268d325452d4fdbb43411077481074a42a8.html"> Containers</a> </span>
                         <time class="entry-date"> 2021-10-12T14:54:29 </time>
                     </div>
                 </div>
@@ -234,7 +274,7 @@
                         <a href="https://aws.amazon.com/blogs/compute/operating-serverless-at-scale-improving-consistency-part-2/">Operating serverless at scale: Improving consistency – Part 2</a>
                     </div>
                     <div class="entry-details">
-                        <span> AWS Compute Blog </span>
+                        <span class="entry-sub"> <a href="495505b9598ebe0ea2141ecc2fc32bbc0fba388b3c7c0d63db4f802774e55b5b.html"> AWS Compute Blog</a> </span>
                         <time class="entry-date"> 2021-10-12T14:50:30 </time>
                     </div>
                 </div>
@@ -244,7 +284,7 @@
                         <a href="https://www.percona.com/blog/why-linux-hugepages-are-super-important-for-database-servers-a-case-with-postgresql/">Why Linux HugePages are Super Important for Database Servers: A Case with PostgreSQL</a>
                     </div>
                     <div class="entry-details">
-                        <span> Percona Database Performance Blog </span>
+                        <span class="entry-sub"> <a href="bc6e5fc7b084f5f97dd23147b98ed2fb58beaf6c54359dd1a0e688768a45b11e.html"> Percona Database Performance Blog</a> </span>
                         <time class="entry-date"> 2021-10-12T14:03:15 </time>
                     </div>
                 </div>
@@ -254,7 +294,7 @@
                         <a href="https://devblogs.microsoft.com/oldnewthing/20211012-00/?p=105788">The happy hand: A puzzle about odd names in Azure DevOps</a>
                     </div>
                     <div class="entry-details">
-                        <span> The Old New Thing </span>
+                        <span class="entry-sub"> <a href="afae77b077c201ce023031cacc9aceec9a1a5c0230f3d19e9ca8e0b3f2dc184e.html"> The Old New Thing</a> </span>
                         <time class="entry-date"> 2021-10-12T14:00:00 </time>
                     </div>
                 </div>
@@ -264,7 +304,7 @@
                         <a href="https://www.percona.com/blog/proxysql-2-3-0-enhanced-support-for-mysql-group-replication/">ProxySQL 2.3.0: Enhanced Support for MySQL Group Replication</a>
                     </div>
                     <div class="entry-details">
-                        <span> Percona Database Performance Blog </span>
+                        <span class="entry-sub"> <a href="bc6e5fc7b084f5f97dd23147b98ed2fb58beaf6c54359dd1a0e688768a45b11e.html"> Percona Database Performance Blog</a> </span>
                         <time class="entry-date"> 2021-10-12T12:12:37 </time>
                     </div>
                 </div>
@@ -274,7 +314,7 @@
                         <a href="https://netflixtechblog.com/safe-updates-of-client-applications-at-netflix-1d01c71a930c?source=rss----2615bd06b42e---4">Safe Updates of Client Applications at Netflix</a>
                     </div>
                     <div class="entry-details">
-                        <span> Netflix TechBlog - Medium </span>
+                        <span class="entry-sub"> <a href="cde22301ccca2028bc131c440bce03a62b9cc9a11cc19f24763f89517d616e28.html"> Netflix TechBlog - Medium</a> </span>
                         <time class="entry-date"> 2021-10-11T17:53:42 </time>
                     </div>
                 </div>
@@ -284,7 +324,7 @@
                         <a href="https://aws.amazon.com/blogs/compute/avoiding-recursive-invocation-with-amazon-s3-and-aws-lambda/">Avoiding recursive invocation with Amazon S3 and AWS Lambda</a>
                     </div>
                     <div class="entry-details">
-                        <span> AWS Compute Blog </span>
+                        <span class="entry-sub"> <a href="495505b9598ebe0ea2141ecc2fc32bbc0fba388b3c7c0d63db4f802774e55b5b.html"> AWS Compute Blog</a> </span>
                         <time class="entry-date"> 2021-10-11T14:50:35 </time>
                     </div>
                 </div>
@@ -294,7 +334,7 @@
                         <a href="https://devblogs.microsoft.com/oldnewthing/20211011-00/?p=105784">Is there a way that my macro can detect that it’s running in a C++ coroutine?</a>
                     </div>
                     <div class="entry-details">
-                        <span> The Old New Thing </span>
+                        <span class="entry-sub"> <a href="afae77b077c201ce023031cacc9aceec9a1a5c0230f3d19e9ca8e0b3f2dc184e.html"> The Old New Thing</a> </span>
                         <time class="entry-date"> 2021-10-11T14:00:00 </time>
                     </div>
                 </div>
@@ -304,7 +344,7 @@
                         <a href="https://www.percona.com/blog/release-roundup-october-11-2021/">Upgrade Fix in Percona Distribution for PostgreSQL, Percona Server for MongoDB Updates: Release Roundup October 11, 2021</a>
                     </div>
                     <div class="entry-details">
-                        <span> Percona Database Performance Blog </span>
+                        <span class="entry-sub"> <a href="bc6e5fc7b084f5f97dd23147b98ed2fb58beaf6c54359dd1a0e688768a45b11e.html"> Percona Database Performance Blog</a> </span>
                         <time class="entry-date"> 2021-10-11T09:57:53 </time>
                     </div>
                 </div>
@@ -314,7 +354,7 @@
                         <a href="http://www.micahlerner.com/2021/10/10/scaling-large-production-clusters-with-partitioned-synchronization.html">Scaling Large Production Clusters with Partitioned Synchronization</a>
                     </div>
                     <div class="entry-details">
-                        <span> www.micahlerner.com </span>
+                        <span class="entry-sub"> <a href="622223b6ed380510242b334256891284dc5b292bb8e5851c4dcdb8fee3a2a63b.html"> www.micahlerner.com</a> </span>
                         <time class="entry-date"> 2021-10-10T07:00:00 </time>
                     </div>
                 </div>
@@ -324,7 +364,7 @@
                         <a href="https://aws.amazon.com/blogs/containers/running-gpu-based-container-applications-with-amazon-ecs-anywhere/">Running GPU-based container applications with Amazon ECS Anywhere</a>
                     </div>
                     <div class="entry-details">
-                        <span> Containers </span>
+                        <span class="entry-sub"> <a href="904a04e043479133260482b9c1b18268d325452d4fdbb43411077481074a42a8.html"> Containers</a> </span>
                         <time class="entry-date"> 2021-10-08T15:50:15 </time>
                     </div>
                 </div>
@@ -334,27 +374,20 @@
                         <a href="https://devblogs.microsoft.com/oldnewthing/20211008-50/?p=105780">What can I do about timer build-up when waiting for COM outbound calls to complete?</a>
                     </div>
                     <div class="entry-details">
-                        <span> The Old New Thing </span>
+                        <span class="entry-sub"> <a href="afae77b077c201ce023031cacc9aceec9a1a5c0230f3d19e9ca8e0b3f2dc184e.html"> The Old New Thing</a> </span>
                         <time class="entry-date"> 2021-10-08T14:00:50 </time>
                     </div>
                 </div>
             
-                <div class="entry">
-                    <div class="entry-title">
-                        <a href="https://www.percona.com/blog/disaster-recovery-for-mongodb-on-kubernetes">Disaster Recovery for MongoDB on Kubernetes</a>
-                    </div>
-                    <div class="entry-details">
-                        <span> Percona Database Performance Blog </span>
-                        <time class="entry-date"> 2021-10-08T13:03:10 </time>
-                    </div>
-                </div>
-            
-            
-                <div class="next-page">
-                    <a href="3.html"> Next Page </a>
-                </div>
-            
         </div>
+        
+            <div class="next-page">
+                <a href="index_3.html"> Next Page </a>
+            </div>
+        
+        <footer>
+            <span>Last refreshed on Mon 25 Oct, 2021 at 07:22 UTC</span>
+        </footer>
     </div>
 </body>
 </html>
